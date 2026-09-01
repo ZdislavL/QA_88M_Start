@@ -1,0 +1,16 @@
+# Virtual environment
+venv/
+.venv/
+
+# Python bytecode / cache
+__pycache__/
+*.py[cod]
+
+# Testing / QA reports
+.pytest_cache/
+.coverage
+htmlcov/
+
+# PyCharm / IDE settings
+.idea/
+.vscode/
