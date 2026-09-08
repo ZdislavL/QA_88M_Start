@@ -65,7 +65,7 @@ else:
 
 try:
     print("Try part")
-    result = 10 / 0
+    result = 10 / 1
 except ZeroDivisionError:
     print("Division by zero")
 finally:

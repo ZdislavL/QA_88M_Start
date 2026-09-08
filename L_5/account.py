@@ -35,10 +35,10 @@ def is_valid_password(password):
         return True
     return False
 
-def cut_length(text,limit):
+def cut_length(text, limit):
     if len(text) > limit:
-        return text
-    return text[:limit]+ "***"
+        return text[:limit] + "***"
+    return text
 
 def count_vowels(text):
     count = 0

@@ -38,6 +38,7 @@ class TestAccount(unittest.TestCase):
     def test_invalid_email_without_dot_second(self):
         self.assertFalse(is_valid_email_second("sveta123gmialcom"))
 
+
 class TestUserProfile(unittest.TestCase):
     def setUp(self):
         self.user = {
@@ -69,11 +70,10 @@ class TestGetInitials(unittest.TestCase):
         with self.assertRaises(ValueError):
             initials("  ")
 
-    
+    def test_text_limit(self):
+        self.assertEqual(cut_length("text is not empty", 10), "text is no***")
 
 
-    
-    
 
 
 if __name__ == "__main__":
